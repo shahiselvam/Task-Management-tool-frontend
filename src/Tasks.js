@@ -68,13 +68,8 @@ export default class Tasks extends React.Component {
 
 
     renderInputfield = (status) => {
-        // const id = this.state.taskid;
-        // const task = [... this.state.Tasks];
-        // const postIndex = task.findIndex(tasks => tasks._id === id);
-
-
-
-        if (this.state.Editstatus == true ) {
+        
+        if (this.state.Editstatus == true) {
             return (<div><select class="form-control form-control-sm" name="status" value={this.state.status} onChange={this.handleChange}>
                 <option value="" disabled selected hidden>Select Status</option>
                 <option value="Assigned">Assigned </option>
